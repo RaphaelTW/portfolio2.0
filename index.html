@@ -8,7 +8,9 @@
     <title>Raphael Laurentino</title>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
+
     <nav class="navbar">
         <div class="navbar-left">
             <a href="index.html" class="logo"><img src="./src/img/logo.png" alt="imagem de logo"></a>
@@ -31,12 +33,51 @@
 
         <div class="navbar-right">
             <div class="online">
-                <img src="./src/img/profile.jpg" alt="imagem de perfil" class="nav-profile-img">
+                <img src="./src/img/profile.jpg" alt="imagem de perfil" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!-- PROFILE-DROP-DOWN-MENU -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h3>Raphael Laurentino</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/feedback.png" alt="imagem de ícone feedback">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/setting.png" alt="imagem de ícone configuração">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/help.png" alt="imagem de ícone ajuda e suporte">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/display.png" alt="imagem de ícone exibição e acessibilidade">
+                    <p>Display & Aceessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/logout.png" alt="imagem de ícone sair">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
             </div>
         </div>
     </nav>
 
     <div class="container">
+        <!-- LEFT SIDEBAR -->
         <div class="left-sidebar">
             <div class="sidebar">
                 <div class="sidebar-profile-box">
@@ -87,9 +128,213 @@
                     <img src="./src/img/profile.jpg" alt="">
                     <textarea rows="2" placeholder="Write a post"></textarea>
                 </div>
+                <div class="create-post-links">
+                    <li><img src="./src/img/photo.png" alt="imagem ícone foto">Photo</li>
+                    <li><img src="./src/img/video.png" alt="imagem ícone video">Video</li>
+                    <li><img src="./src/img/event.png" alt="imagem ícone evento">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>Top <img src="./src/img/down-arrow.png" alt=""></span></p>
+            </div>
+
+            <!-- POST ONE -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h1>Raphael Laurentino</h1>
+                        <small>Web Developer</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Desenvolvedor Front-End com mais de 2 anos de experiência em HTML, CSS, JavaScript (ES6), Bootstrap, PHP, MySQL e Laravel. No React estou no início. Efetivado na Via Expressa após 7 meses de estágio, demonstrando rápido aprendizado e dedicação. Experiência em PHP (Laravel) e MySQL. Reconhecido por criar interfaces intuitivas, focadas na experiência do usuário. Comprometido com a melhoria contínua e atualizado com as tendências do setor</p>
+                <img src="./src/img/post-image-1.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="./src/img/thumbsup.png" alt="">
+                        <img src="./src/img/love.png" alt="">
+                        <img src="./src/img/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &midoot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./src/img/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="./src/img/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/like.png" alt="imagem de curtida">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/comment.png" alt="imagem de comentário">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/share.png" alt="imagem de compartilhar">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/send.png" alt="imagem de enviar">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST TWO -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h1>Raphael Laurentino</h1>
+                        <small>Web Developer</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Desenvolvedor Front-End com mais de 2 anos de experiência em HTML, CSS, JavaScript (ES6), Bootstrap, PHP, MySQL e Laravel. No React estou no início. Efetivado na Via Expressa após 7 meses de estágio, demonstrando rápido aprendizado e dedicação. Experiência em PHP (Laravel) e MySQL. Reconhecido por criar interfaces intuitivas, focadas na experiência do usuário. Comprometido com a melhoria contínua e atualizado com as tendências do setor</p>
+                <img src="./src/img/post-image-2.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="./src/img/thumbsup.png" alt="">
+                        <img src="./src/img/love.png" alt="">
+                        <img src="./src/img/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &midoot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./src/img/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="./src/img/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/like.png" alt="imagem de curtida">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/comment.png" alt="imagem de comentário">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/share.png" alt="imagem de compartilhar">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/send.png" alt="imagem de enviar">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST THREE-->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h1>Raphael Laurentino</h1>
+                        <small>Web Developer</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Desenvolvedor Front-End com mais de 2 anos de experiência em HTML, CSS, JavaScript (ES6), Bootstrap, PHP, MySQL e Laravel. No React estou no início. Efetivado na Via Expressa após 7 meses de estágio, demonstrando rápido aprendizado e dedicação. Experiência em PHP (Laravel) e MySQL. Reconhecido por criar interfaces intuitivas, focadas na experiência do usuário. Comprometido com a melhoria contínua e atualizado com as tendências do setor</p>
+                <img src="./src/img/post-image-3.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="./src/img/thumbsup.png" alt="">
+                        <img src="./src/img/love.png" alt="">
+                        <img src="./src/img/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &midoot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./src/img/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="./src/img/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/like.png" alt="imagem de curtida">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/comment.png" alt="imagem de comentário">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/share.png" alt="imagem de compartilhar">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/send.png" alt="imagem de enviar">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST FOUR -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h1>Raphael Laurentino</h1>
+                        <small>Web Developer</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Desenvolvedor Front-End com mais de 2 anos de experiência em HTML, CSS, JavaScript (ES6), Bootstrap, PHP, MySQL e Laravel. No React estou no início. Efetivado na Via Expressa após 7 meses de estágio, demonstrando rápido aprendizado e dedicação. Experiência em PHP (Laravel) e MySQL. Reconhecido por criar interfaces intuitivas, focadas na experiência do usuário. Comprometido com a melhoria contínua e atualizado com as tendências do setor</p>
+                <img src="./src/img/post-image-4.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="./src/img/thumbsup.png" alt="">
+                        <img src="./src/img/love.png" alt="">
+                        <img src="./src/img/clap.png" alt="">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &midoot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./src/img/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="./src/img/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/like.png" alt="imagem de curtida">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/comment.png" alt="imagem de comentário">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/share.png" alt="imagem de compartilhar">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./src/img/send.png" alt="imagem de enviar">
+                        <span>Send</span>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- [RIGHT SIDEBAR] -->
         <div class="right-sidebar">
             <div class="sidebar-news">
                 <img src="./src/img/more.png" alt="" class="info-ico">
@@ -139,5 +384,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>

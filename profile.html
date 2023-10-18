@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" dir="ltr"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="description" content="Raphael Laurentino"/>
+    <title>Raphael Laurentino</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./src/img/logo.png" alt="imagem de logo"></a>
+
+            <div class="search-box">
+                <img src="./src/img/search.png" alt="lupa de pesquisa">
+                <input type="text" placeholder="Pesquisa">
+            </div>
+        </div>
+
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="./src/img/home.png" alt=""><span>Início</span></a></li>
+                <li><a href="#"><img src="./src/img/network.png" alt=""><span>Perfil</span></a></li>
+                <li><a href="#"><img src="./src/img/jobs.png" alt=""><span>Minhas Redes</span></a></li>
+                <li><a href="#"><img src="./src/img/message.png" alt=""><span>Mensagens</span></a></li>
+                <li><a href="#"><img src="./src/img/notification.png" alt=""><span>Novidades</span></a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./src/img/profile.jpg" alt="imagem de perfil" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!-- PROFILE-DROP-DOWN-MENU -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./src/img/profile.jpg" alt="">
+                    <div>
+                        <h3>Raphael Laurentino</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/feedback.png" alt="imagem de ícone feedback">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/setting.png" alt="imagem de ícone configuração">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/help.png" alt="imagem de ícone ajuda e suporte">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/display.png" alt="imagem de ícone exibição e acessibilidade">
+                    <p>Display & Aceessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./src/img/logout.png" alt="imagem de ícone sair">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
