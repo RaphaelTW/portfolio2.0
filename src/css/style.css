@@ -1,9 +1,8 @@
 /* NavBar Início */
-
 * {
     margin: 0;
     padding: 0;
-    font-size: 'Roboto';
+    font-size: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -21,7 +20,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;
+    background: #fff;
     padding: 6px 6%;
     position: sticky;
     top: 0;
@@ -84,7 +83,7 @@ a {
     content: '';
     width: 7px;
     height: 7px;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 50%;
     right: 0px;
     top: 0px;
@@ -127,16 +126,14 @@ a {
     justify-content: space-between;
 }
 
-/* LEFT SIDEBAR */
+/* ---- LEFT SIDEBAR ---- */
 .left-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
-    position: sticky;
-    top: 73px;
 }
 
 .sidebar-profile-box {
-    background: #ffffff;
+    background: #fff;
 }
 
 .sidebar-profile-info {
@@ -146,7 +143,7 @@ a {
 .sidebar-profile-info img {
     width: 90px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #fff;
     padding: 4px;
     margin-top: -45px;
 }
@@ -176,7 +173,7 @@ a {
 
 .sidebar-profile-info ul li span {
     float: right;
-    color: #045be6
+    color: #045be6;
 }
 
 .sidebar-profile-link {
@@ -205,7 +202,7 @@ a {
 }
 
 .sidebar-activity {
-    background: #ffffff;
+    background: #fff;
     padding: 5px 25px;
     margin: 12px 0;
 }
@@ -245,12 +242,10 @@ a {
     margin: 10px 0;
 }
 
-/* RIGHT SIDEBAR*/
+/* ---- RIGHT SIDEBAR ---- */
 .right-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
-    position: sticky;
-    top: 73px;
 }
 
 .sidebar-news {
@@ -354,14 +349,13 @@ a {
     margin-right: 4px;
 }
 
-
-/* MAIN CONTENT*/
-.main-contente {
+/* ---- MAIN CONTENT ---- */
+.main-content {
     flex-basis: 47%;
 }
 
 .create-post {
-    background: #ffffff;
+    background: #fff;
 }
 
 .create-post-input {
@@ -414,7 +408,7 @@ a {
 
 .create-post-links li:last-child {
     background: #045be6;
-    color: #ffffff;
+    color: #fff;
     border-top: 0;
     border-right: 0;
 }
